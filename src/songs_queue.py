@@ -53,8 +53,18 @@ class Songs_Queue():
     def return_queue(self):
         return (self.queue, self.current_index)
 
+    """
+    New funtionality - group 17
+    This function randomly shuffles the songs currently in the queue
+    """
+
     def shuffle_queue(self):
         shuffle(self.queue)
+
+    """
+    New funtionality - group 17
+    This function adds new songs in the queue
+    """
 
     def add_to_queue(self, song_name):
         self.queue.append(song_name)
